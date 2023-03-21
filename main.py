@@ -8,6 +8,13 @@ def main():
             string = string + str(i)
         return string
 
+    def decode(string): # define function
+        decoded = '' # create empty string
+        for i in range(8): # iterate
+            decoded += str(int(password[i])-3) # subtract 3 from each element in password then convert back to string
+        return decoded
+
 
 if __name__ == '__main__':
     main()
+
